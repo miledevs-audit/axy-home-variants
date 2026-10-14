@@ -31,15 +31,20 @@ h1 i{font-style:normal;color:var(--o)}
 .go{margin-top:auto;padding-top:14px;display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:15px;color:var(--tx)}
 .go b{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--o);color:#fff;font-size:15px}
 footer{border-top:1px solid var(--ln);padding:22px 0 40px;color:var(--tx3);font-size:13px}
-@media (max-width:760px){.grid{grid-template-columns:1fr}}
+.grid>.card:first-child{grid-column:1/-1}.grid>.card:first-child .media{aspect-ratio:16/8}
+@media (max-width:760px){.grid{grid-template-columns:1fr}.grid>.card:first-child .media{aspect-ratio:16/10}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <header><img src="img/axy-logo.png" alt="AXY" width="358" height="194"><span>Concept · Oct 2026</span></header>
-  <h1>Home page, <i>four ways</i> to open it.</h1>
-  <p class="lead">Same AXY site below the first screen — four different motion heroes on top. Orange, black and white. Open each one and scroll.</p>
+  <h1>Home page, <i>five ways</i> to open it.</h1>
+  <p class="lead">Same AXY site below the first screen — different motion heroes on top. Orange, black and white. Open each one and scroll.</p>
   <div class="grid">
+    <a class="card" href="simple/">
+      <div class="media"><video src="previews/simple.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
+      <div class="body"><span class="num">00 · Simple</span><h2>Growth arrow</h2><p>The original AXY idea, made clear: one orange growth arrow, three platforms — and the real result for each one.</p><span class="go"><b>→</b>Open the page</span></div>
+    </a>
     <a class="card" href="v1/">
       <div class="media"><video src="previews/v1.mp4" autoplay muted loop playsinline preload="metadata"></video></div>
       <div class="body"><span class="num">01 · Light</span><h2>Keynote</h2><p>A 12-second product film in a light, glassy world: the cursor clicks AXY, types “Launch my product on Amazon” and lands on the +400% case.</p><span class="go"><b>→</b>Open the page</span></div>
